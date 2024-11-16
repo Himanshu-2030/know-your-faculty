@@ -1,0 +1,129 @@
+:root {
+  --background-color: #f5f5f5; /* Adjust background color */
+  --primary-color: #007bff; /* Adjust primary color for branding */
+  --text-color: #333; /* Default text color */
+  --nav-hover-color: #e0e0e0; /* Hover color for nav items */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Align logo and nav items on opposite sides */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--background-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--nav-hover-color);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adds slight shadow */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add spacing between logo icon and text */
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Add spacing between navigation items */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item a:hover {
+  background-color: var(--nav-hover-color);
+  color: var(--primary-color);
+}
+
+.nav-toggle {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.cta-button {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3; /* Darker shade of primary color */
+  transform: scale(1.05);
+}
+
+.cta-button.secondary {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+.cta-button.secondary:hover {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds hover effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    display: none;
+    padding: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds dropdown shadow */
+  }
+
+  .nav.active .nav-list {
+    display: flex;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-toggle {
+    display: none;
+  }
+}

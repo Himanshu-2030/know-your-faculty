@@ -1,0 +1,43 @@
+:root {
+  --background-color: #caccfa;
+  --primary-color: #303d40;
+  --text-color: #303d40;
+  --nav-hover-color: #caccfa;
+}
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.loader {
+  width: 20px;
+  aspect-ratio: 4;
+  background: radial-gradient(circle closest-side, #000 90%, #0000) 0 /
+    calc(100% / 3) 100% space;
+  clip-path: inset(0 100% 0 0);
+  animation: l1 1s steps(4) infinite;
+}
+@keyframes l1 {
+  to {
+    clip-path: inset(0 -34% 0 0);
+  }
+}
+.clerk-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure full viewport height */
+  width: 100vw; /* Ensure full viewport width */
+  margin: auto; /* Center the modal */
+}
+
+/* Global Styles */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header, .nav, .logo {
+  transition: background-color 0.3s, color 0.3s;
+}

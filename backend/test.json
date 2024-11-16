@@ -1,0 +1,90 @@
+{
+  "professors": [
+    {
+      "id": 1,
+      "name": "Dr. Alice Smith",
+      "specialization": "Artificial Intelligence, Machine Learning",
+      "average_rating": 4.8,
+      "reviews": [
+        {
+          "review_id": 1,
+          "rating": 5,
+          "comment": "Excellent teacher for AI projects.",
+          "student_name": "John Doe"
+        },
+        {
+          "review_id": 2,
+          "rating": 4.7,
+          "comment": "Very knowledgeable in ML.",
+          "student_name": "Jane Doe"
+        }
+      ],
+      "courses_taught": [
+        {
+          "course_code": "CS101",
+          "course_name": "Introduction to AI",
+          "semester": "Fall 2024"
+        },
+        {
+          "course_code": "CS102",
+          "course_name": "Machine Learning Basics",
+          "semester": "Spring 2024"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Dr. Bob Johnson",
+      "specialization": "Data Science, Big Data",
+      "average_rating": 4.5,
+      "reviews": [
+        {
+          "review_id": 1,
+          "rating": 4.6,
+          "comment": "Great insights into data analysis.",
+          "student_name": "Sam Lee"
+        },
+        {
+          "review_id": 2,
+          "rating": 1.0,
+          "comment": "",
+          "student_name": ""
+        }
+      ],
+      "courses_taught": [
+        {
+          "course_code": "DS101",
+          "course_name": "Data Science Fundamentals",
+          "semester": "Fall 2024"
+        },
+        {
+          "course_code": "DS102",
+          "course_name": "Big Data Analysis",
+          "semester": "Spring 2024"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dr. Carol Davis",
+      "specialization": "Software Engineering, Cloud Computing",
+      "average_rating": 4.2,
+      "reviews": [
+        {
+          "review_id": 1,
+          "rating": 4.2,
+          "comment": "Very practical and hands-on teaching.",
+          "student_name": "Alice Green"
+        }
+      ],
+      "courses_taught": [
+        {
+          "course_code": "SE101",
+          "course_name": "Introduction to Software Engineering",
+          "semester": "Fall 2024"
+        }
+      ]
+    }
+  ]
+}
+
