@@ -5,15 +5,32 @@
 Before you proceed, ensure that you have the following installed:
 ```
 - Python 3.x and virtualenv for the backend.
-- Node.js and npm for the frontend.
+- Node.js and npm for the frontend. 
 ```
 
 ## Backend Setup
 
 ### Steps to Run the Backend:
 
-1. Navigate to the `backend` folder: ```cd backend ```
-   
+1. Navigate to the `backend` folder: `cd backend `
 2. Activate the virtual environment: `venv\Scripts\activate`
+3. Install the required dependencies: `pip install -r requirements.txt`
+4. Update API Keys:
+```
+Replace the placeholder AI API Key in server.py with your actual key.
+Update your Clerk API Key as needed.
+```
+5. Start the backend server: `python server.py`
 
-3. 
+## Frontend Setup
+
+### Steps to Run the Frontend:
+
+1. Navigate to the frontend folder: `cd frontend`
+2. Install the dependencies: `npm install`
+3. Start the development server: `npm start`
+
+###Additional Notes
+Ensure that the backend is running before interacting with the frontend.
+Use appropriate .env files or configuration settings to manage sensitive API keys securely.
+For troubleshooting, check your terminal or console logs for error messages.
