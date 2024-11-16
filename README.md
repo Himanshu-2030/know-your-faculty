@@ -16,10 +16,11 @@ Before you proceed, ensure that you have the following installed:
 2. Activate the virtual environment: `venv\Scripts\activate`
 3. Install the required dependencies: `pip install -r requirements.txt`
 4. Update API Keys:
-
+```
 #### Backend - Replace the placeholder API `YOUR_GEMINI_KEY` Key in server.py with your actual key.
 #### Frontend - Create `.env.local` file in the root frontend folder.
 #### `REACT_APP_CLERK_PUBLISHABLE_KEY=YOUR_CLERK_PUBLISHABLE_KEY`
+```
 
 5. Start the backend server: `python server.py`
 
