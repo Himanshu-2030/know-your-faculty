@@ -30,7 +30,7 @@ Update your Clerk API Key as needed.
 2. Install the dependencies: `npm install`
 3. Start the development server: `npm start`
 
-###Additional Notes
+### Additional Notes
 Ensure that the backend is running before interacting with the frontend.
 Use appropriate .env files or configuration settings to manage sensitive API keys securely.
 For troubleshooting, check your terminal or console logs for error messages.
